@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.eggs/
+dist/
+build/
+*.so
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MLflow / experiment tracking
+mlruns/
+mlflow.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables (never commit secrets)
+.env
+*.env
+
+# Raw market data / API dumps (never commit)
+*.csv
+*.parquet
+*.feather
+data/raw/
+data/cache/
+
+# Large binary artifacts
+*.h5
+*.hdf5
+*.pkl
+*.pickle

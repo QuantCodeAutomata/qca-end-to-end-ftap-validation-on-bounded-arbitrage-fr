@@ -1,0 +1,194 @@
+{
+  "parameters": {
+    "S0": 1.0,
+    "T": 1.0,
+    "N": 15,
+    "n_paths": 10000,
+    "seed": 42
+  },
+  "E_S_empirical": [
+    1.0,
+    0.9972,
+    1.0184,
+    1.0128,
+    1.0112,
+    1.0464,
+    1.0432,
+    1.0496,
+    1.2032,
+    0.9728,
+    1.3312,
+    1.8432,
+    1.2288,
+    0.8192,
+    1.6384,
+    0.0
+  ],
+  "E_S_theoretical": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "E_S_matches": false,
+  "frac_alive_empirical": [
+    1.0,
+    0.4986,
+    0.2546,
+    0.1266,
+    0.0632,
+    0.0327,
+    0.0163,
+    0.0082,
+    0.0047,
+    0.0019,
+    0.0013,
+    0.0009,
+    0.0003,
+    0.0001,
+    0.0001,
+    0.0
+  ],
+  "frac_alive_theoretical": [
+    1.0,
+    0.5,
+    0.25,
+    0.125,
+    0.0625,
+    0.03125,
+    0.015625,
+    0.0078125,
+    0.00390625,
+    0.001953125,
+    0.0009765625,
+    0.00048828125,
+    0.000244140625,
+    0.0001220703125,
+    6.103515625e-05,
+    3.0517578125e-05
+  ],
+  "terminal_frac_alive": 0.0,
+  "prob_alive_theory_N": 3.0517578125e-05,
+  "stopped_martingale_checks": {
+    "m=1": {
+      "max_conditional_error": 0.0028000000000000247,
+      "mean_conditional_error": 0.0001866666666666683,
+      "is_martingale": true
+    },
+    "m=2": {
+      "max_conditional_error": 0.04251905334937822,
+      "mean_conditional_error": 0.003021270223291883,
+      "is_martingale": true
+    },
+    "m=3": {
+      "max_conditional_error": 0.04251905334937822,
+      "mean_conditional_error": 0.004487622671576763,
+      "is_martingale": true
+    },
+    "m=4": {
+      "max_conditional_error": 0.04251905334937822,
+      "mean_conditional_error": 0.00533017138142408,
+      "is_martingale": true
+    }
+  },
+  "all_stopped_are_martingales": true,
+  "true_martingale_impossibility_proof": {
+    "step_1": "Suppose Q ~ P and S is a Q-true-martingale.",
+    "step_2": "Then E_Q[S_T] = S_0 = 1.0 (martingale property).",
+    "step_3": "P(S_T > 0) = (0.5)^N \u2192 0 as N \u2192 \u221e.  For N=15: (0.5)^15 = 3.05e-05.",
+    "step_4": "In the limit (N \u2192 \u221e): S_T = 0  P-almost surely.",
+    "step_5": "Q ~ P implies Q(A) = 0 \u27fa P(A) = 0 for every event A.",
+    "step_6": "Therefore S_T = 0  Q-almost surely.",
+    "step_7": "But then E_Q[S_T] = 0 \u2260 1 = S_0 \u2014 contradiction!",
+    "conclusion": "No equivalent TRUE martingale measure exists."
+  },
+  "exact_expectations_per_step": {
+    "n=1": {
+      "P_alive": 0.5,
+      "S_alive": 2.0,
+      "E_P_exact": 1.0
+    },
+    "n=2": {
+      "P_alive": 0.25,
+      "S_alive": 4.0,
+      "E_P_exact": 1.0
+    },
+    "n=3": {
+      "P_alive": 0.125,
+      "S_alive": 8.0,
+      "E_P_exact": 1.0
+    },
+    "n=4": {
+      "P_alive": 0.0625,
+      "S_alive": 16.0,
+      "E_P_exact": 1.0
+    },
+    "n=5": {
+      "P_alive": 0.03125,
+      "S_alive": 32.0,
+      "E_P_exact": 1.0
+    },
+    "n=6": {
+      "P_alive": 0.015625,
+      "S_alive": 64.0,
+      "E_P_exact": 1.0
+    },
+    "n=7": {
+      "P_alive": 0.0078125,
+      "S_alive": 128.0,
+      "E_P_exact": 1.0
+    },
+    "n=8": {
+      "P_alive": 0.00390625,
+      "S_alive": 256.0,
+      "E_P_exact": 1.0
+    },
+    "n=9": {
+      "P_alive": 0.001953125,
+      "S_alive": 512.0,
+      "E_P_exact": 1.0
+    },
+    "n=10": {
+      "P_alive": 0.0009765625,
+      "S_alive": 1024.0,
+      "E_P_exact": 1.0
+    },
+    "n=11": {
+      "P_alive": 0.00048828125,
+      "S_alive": 2048.0,
+      "E_P_exact": 1.0
+    },
+    "n=12": {
+      "P_alive": 0.000244140625,
+      "S_alive": 4096.0,
+      "E_P_exact": 1.0
+    },
+    "n=13": {
+      "P_alive": 0.0001220703125,
+      "S_alive": 8192.0,
+      "E_P_exact": 1.0
+    },
+    "n=14": {
+      "P_alive": 6.103515625e-05,
+      "S_alive": 16384.0,
+      "E_P_exact": 1.0
+    },
+    "n=15": {
+      "P_alive": 3.0517578125e-05,
+      "S_alive": 32768.0,
+      "E_P_exact": 1.0
+    }
+  }
+}

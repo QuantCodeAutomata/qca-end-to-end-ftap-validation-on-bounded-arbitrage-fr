@@ -1,0 +1,922 @@
+{
+  "geometry_step1": {
+    "J": [
+      [
+        0.2,
+        0.2
+      ],
+      [
+        -0.2,
+        -0.2
+      ]
+    ],
+    "u_J": [
+      0.0,
+      0.0
+    ],
+    "J0": [
+      [
+        0.2,
+        0.2
+      ],
+      [
+        -0.2,
+        -0.2
+      ]
+    ],
+    "beta": 0.2828427124746162,
+    "kappa": 3.535533905932773
+  },
+  "geometry_step2_up": {
+    "J": [
+      [
+        0.24,
+        0.24
+      ],
+      [
+        -0.24,
+        -0.24
+      ]
+    ],
+    "u_J": [
+      0.0,
+      0.0
+    ],
+    "J0": [
+      [
+        0.24,
+        0.24
+      ],
+      [
+        -0.24,
+        -0.24
+      ]
+    ],
+    "beta": 0.3394112549695394,
+    "kappa": 2.946278254943978
+  },
+  "geometry_step2_dn": {
+    "J": [
+      [
+        0.16,
+        0.16
+      ],
+      [
+        -0.16,
+        -0.16
+      ]
+    ],
+    "u_J": [
+      0.0,
+      0.0
+    ],
+    "J0": [
+      [
+        0.16,
+        0.16
+      ],
+      [
+        -0.16,
+        -0.16
+      ]
+    ],
+    "beta": 0.22627416997969294,
+    "kappa": 4.419417382415967
+  },
+  "projection_checks": [
+    {
+      "H": [
+        1.0,
+        0.0
+      ],
+      "G": [
+        0.5,
+        0.5
+      ],
+      "|G|": 0.70710678,
+      "gains_match": true
+    },
+    {
+      "H": [
+        0.0,
+        1.0
+      ],
+      "G": [
+        0.5,
+        0.5
+      ],
+      "|G|": 0.70710678,
+      "gains_match": true
+    },
+    {
+      "H": [
+        1.0,
+        1.0
+      ],
+      "G": [
+        1.0,
+        1.0
+      ],
+      "|G|": 1.41421356,
+      "gains_match": true
+    },
+    {
+      "H": [
+        100.0,
+        -100.0
+      ],
+      "G": [
+        0.0,
+        0.0
+      ],
+      "|G|": 0.0,
+      "gains_match": true
+    },
+    {
+      "H": [
+        2.0,
+        1.0
+      ],
+      "G": [
+        1.5,
+        1.5
+      ],
+      "|G|": 2.12132034,
+      "gains_match": true
+    }
+  ],
+  "kappa_step1": 3.535533905932773,
+  "kappa_step2_up": 2.946278254943978,
+  "kappa_step2_dn": 4.419417382415967,
+  "strategy_results": [
+    {
+      "label": "H_root=(1,0), mid=neutral",
+      "ineq_a_holds": true,
+      "ineq_b_holds": true,
+      "proj_bound_ok": true,
+      "residuals": [
+        {
+          "path": "uu",
+          "t": 0,
+          "W_t": 1.0,
+          "a_R_t": 1.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "uu",
+          "t": 0.5,
+          "W_t": 1.2,
+          "a_R_t": 2.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.2,
+          "a_Rm1": 1.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "uu",
+          "t": 1.0,
+          "W_t": 1.44,
+          "a_R_t": 4.0,
+          "R_t": 4.0,
+          "V_t": 0.62225397,
+          "variation": 0.44,
+          "a_Rm1": 3.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 0,
+          "W_t": 1.0,
+          "a_R_t": 1.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 0.5,
+          "W_t": 1.2,
+          "a_R_t": 2.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.2,
+          "a_Rm1": 1.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 1.0,
+          "W_t": 0.96,
+          "a_R_t": 4.0,
+          "R_t": 4.0,
+          "V_t": 0.62225397,
+          "variation": 0.44,
+          "a_Rm1": 3.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 0,
+          "W_t": 1.0,
+          "a_R_t": 1.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 0.5,
+          "W_t": 0.8,
+          "a_R_t": 2.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.2,
+          "a_Rm1": 1.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 1.0,
+          "W_t": 0.8,
+          "a_R_t": 4.0,
+          "R_t": 4.0,
+          "V_t": 0.50911688,
+          "variation": 0.2,
+          "a_Rm1": 3.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 0,
+          "W_t": 1.0,
+          "a_R_t": 1.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 0.5,
+          "W_t": 0.8,
+          "a_R_t": 2.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.2,
+          "a_Rm1": 1.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 1.0,
+          "W_t": 0.8,
+          "a_R_t": 4.0,
+          "R_t": 4.0,
+          "V_t": 0.50911688,
+          "variation": 0.2,
+          "a_Rm1": 3.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        }
+      ]
+    },
+    {
+      "label": "H_root=(0,1), mid=neutral",
+      "ineq_a_holds": true,
+      "ineq_b_holds": true,
+      "proj_bound_ok": true,
+      "residuals": [
+        {
+          "path": "uu",
+          "t": 0,
+          "W_t": 1.0,
+          "a_R_t": 1.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "uu",
+          "t": 0.5,
+          "W_t": 1.2,
+          "a_R_t": 2.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.2,
+          "a_Rm1": 1.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "uu",
+          "t": 1.0,
+          "W_t": 1.44,
+          "a_R_t": 4.0,
+          "R_t": 4.0,
+          "V_t": 0.62225397,
+          "variation": 0.44,
+          "a_Rm1": 3.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 0,
+          "W_t": 1.0,
+          "a_R_t": 1.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 0.5,
+          "W_t": 1.2,
+          "a_R_t": 2.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.2,
+          "a_Rm1": 1.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 1.0,
+          "W_t": 0.96,
+          "a_R_t": 4.0,
+          "R_t": 4.0,
+          "V_t": 0.62225397,
+          "variation": 0.44,
+          "a_Rm1": 3.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 0,
+          "W_t": 1.0,
+          "a_R_t": 1.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 0.5,
+          "W_t": 0.8,
+          "a_R_t": 2.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.2,
+          "a_Rm1": 1.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 1.0,
+          "W_t": 0.8,
+          "a_R_t": 4.0,
+          "R_t": 4.0,
+          "V_t": 0.50911688,
+          "variation": 0.2,
+          "a_Rm1": 3.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 0,
+          "W_t": 1.0,
+          "a_R_t": 1.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 0.5,
+          "W_t": 0.8,
+          "a_R_t": 2.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.2,
+          "a_Rm1": 1.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 1.0,
+          "W_t": 0.8,
+          "a_R_t": 4.0,
+          "R_t": 4.0,
+          "V_t": 0.50911688,
+          "variation": 0.2,
+          "a_Rm1": 3.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        }
+      ]
+    },
+    {
+      "label": "H_root=(2,1), varying mid",
+      "ineq_a_holds": true,
+      "ineq_b_holds": true,
+      "proj_bound_ok": true,
+      "residuals": [
+        {
+          "path": "uu",
+          "t": 0,
+          "W_t": 2.0,
+          "a_R_t": 2.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "uu",
+          "t": 0.5,
+          "W_t": 2.6,
+          "a_R_t": 4.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.6,
+          "a_Rm1": 2.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "uu",
+          "t": 1.0,
+          "W_t": 2.96,
+          "a_R_t": 8.0,
+          "R_t": 4.0,
+          "V_t": 0.62225397,
+          "variation": 0.96,
+          "a_Rm1": 6.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 0,
+          "W_t": 2.0,
+          "a_R_t": 2.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 0.5,
+          "W_t": 2.6,
+          "a_R_t": 4.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.6,
+          "a_Rm1": 2.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 1.0,
+          "W_t": 2.24,
+          "a_R_t": 8.0,
+          "R_t": 4.0,
+          "V_t": 0.62225397,
+          "variation": 0.96,
+          "a_Rm1": 6.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 0,
+          "W_t": 2.0,
+          "a_R_t": 2.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 0.5,
+          "W_t": 1.4,
+          "a_R_t": 4.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.6,
+          "a_Rm1": 2.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 1.0,
+          "W_t": 1.56,
+          "a_R_t": 8.0,
+          "R_t": 4.0,
+          "V_t": 0.50911688,
+          "variation": 0.76,
+          "a_Rm1": 6.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 0,
+          "W_t": 2.0,
+          "a_R_t": 2.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 0.5,
+          "W_t": 1.4,
+          "a_R_t": 4.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.6,
+          "a_Rm1": 2.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 1.0,
+          "W_t": 1.24,
+          "a_R_t": 8.0,
+          "R_t": 4.0,
+          "V_t": 0.50911688,
+          "variation": 0.76,
+          "a_Rm1": 6.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        }
+      ]
+    },
+    {
+      "label": "H_root=(100,-100) [redundant]",
+      "ineq_a_holds": true,
+      "ineq_b_holds": true,
+      "proj_bound_ok": true,
+      "residuals": [
+        {
+          "path": "uu",
+          "t": 0,
+          "W_t": 1.0,
+          "a_R_t": 1.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "uu",
+          "t": 0.5,
+          "W_t": 1.0,
+          "a_R_t": 2.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.0,
+          "a_Rm1": 1.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "uu",
+          "t": 1.0,
+          "W_t": 1.0,
+          "a_R_t": 4.0,
+          "R_t": 4.0,
+          "V_t": 0.62225397,
+          "variation": 0.0,
+          "a_Rm1": 3.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 0,
+          "W_t": 1.0,
+          "a_R_t": 1.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 0.5,
+          "W_t": 1.0,
+          "a_R_t": 2.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.0,
+          "a_Rm1": 1.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 1.0,
+          "W_t": 1.0,
+          "a_R_t": 4.0,
+          "R_t": 4.0,
+          "V_t": 0.62225397,
+          "variation": 0.0,
+          "a_Rm1": 3.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 0,
+          "W_t": 1.0,
+          "a_R_t": 1.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 0.5,
+          "W_t": 1.0,
+          "a_R_t": 2.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.0,
+          "a_Rm1": 1.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 1.0,
+          "W_t": 1.0,
+          "a_R_t": 4.0,
+          "R_t": 4.0,
+          "V_t": 0.50911688,
+          "variation": 0.0,
+          "a_Rm1": 3.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 0,
+          "W_t": 1.0,
+          "a_R_t": 1.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 0.5,
+          "W_t": 1.0,
+          "a_R_t": 2.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 0.0,
+          "a_Rm1": 1.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 1.0,
+          "W_t": 1.0,
+          "a_R_t": 4.0,
+          "R_t": 4.0,
+          "V_t": 0.50911688,
+          "variation": 0.0,
+          "a_Rm1": 3.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        }
+      ]
+    },
+    {
+      "label": "H_root=(5,5) [max wealth]",
+      "ineq_a_holds": true,
+      "ineq_b_holds": true,
+      "proj_bound_ok": true,
+      "residuals": [
+        {
+          "path": "uu",
+          "t": 0,
+          "W_t": 2.0,
+          "a_R_t": 2.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "uu",
+          "t": 0.5,
+          "W_t": 4.0,
+          "a_R_t": 4.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 2.0,
+          "a_Rm1": 2.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "uu",
+          "t": 1.0,
+          "W_t": 6.4,
+          "a_R_t": 8.0,
+          "R_t": 4.0,
+          "V_t": 0.62225397,
+          "variation": 4.4,
+          "a_Rm1": 6.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 0,
+          "W_t": 2.0,
+          "a_R_t": 2.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 0.5,
+          "W_t": 4.0,
+          "a_R_t": 4.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 2.0,
+          "a_Rm1": 2.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "ud",
+          "t": 1.0,
+          "W_t": 1.6,
+          "a_R_t": 8.0,
+          "R_t": 4.0,
+          "V_t": 0.62225397,
+          "variation": 4.4,
+          "a_Rm1": 6.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 0,
+          "W_t": 2.0,
+          "a_R_t": 2.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 0.5,
+          "W_t": 0.0,
+          "a_R_t": 4.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 2.0,
+          "a_Rm1": 2.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "du",
+          "t": 1.0,
+          "W_t": 0.0,
+          "a_R_t": 8.0,
+          "R_t": 4.0,
+          "V_t": 0.50911688,
+          "variation": 2.0,
+          "a_Rm1": 6.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 0,
+          "W_t": 2.0,
+          "a_R_t": 2.0,
+          "R_t": 1.0,
+          "V_t": 0.0,
+          "variation": 0.0,
+          "a_Rm1": 0.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 0.5,
+          "W_t": 0.0,
+          "a_R_t": 4.0,
+          "R_t": 2.0,
+          "V_t": 0.28284271,
+          "variation": 2.0,
+          "a_Rm1": 2.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        },
+        {
+          "path": "dd",
+          "t": 1.0,
+          "W_t": 0.0,
+          "a_R_t": 8.0,
+          "R_t": 4.0,
+          "V_t": 0.50911688,
+          "variation": 2.0,
+          "a_Rm1": 6.0,
+          "ineq_a_ok": true,
+          "ineq_b_ok": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "kappa_step1": 3.535533905932773,
+    "kappa_step2_up": 2.946278254943978,
+    "kappa_step2_dn": 4.419417382415967,
+    "all_ineq_a_holds": true,
+    "all_ineq_b_holds": true,
+    "all_proj_bound_ok": true,
+    "lemma3_verified": true
+  }
+}

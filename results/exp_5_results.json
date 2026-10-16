@@ -1,0 +1,119 @@
+{
+  "model_stopped_B2": {
+    "bound": 2.0,
+    "S2": [
+      2.0,
+      1.05,
+      1.05,
+      0.49
+    ],
+    "P": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "Z": [
+      0.7105263110784219,
+      0.7894736820648762,
+      0.9375000014478423,
+      1.5625000287818909
+    ],
+    "Q": [
+      0.17763157776960548,
+      0.19736842051621906,
+      0.23437500036196057,
+      0.3906250071954727
+    ],
+    "Q_equiv_P": true,
+    "Z_sum_check": 1.0000000058432579,
+    "martingale": {
+      "E_Q_S1": 1.0000000027189402,
+      "S0": 1.0,
+      "martingale_t1": true,
+      "E_Q_S2_given_up": 1.4999999990733446,
+      "node_up": 1.5,
+      "martingale_t2_up": true,
+      "E_Q_S2_given_down": 0.6999999977850191,
+      "node_down": 0.7,
+      "martingale_t2_down": true
+    },
+    "na_direction": {
+      "buy_and_hold": {
+        "E_Q_gain": -3.124317748959271e-09,
+        "zero": true
+      },
+      "up_subtree": {
+        "E_Q_gain": -3.4749582378257315e-10,
+        "zero": true
+      },
+      "down_subtree": {
+        "E_Q_gain": -1.3843630408683083e-09,
+        "zero": true
+      },
+      "mixed": {
+        "E_Q_gain": -2.6058841334775096e-09,
+        "zero": true
+      }
+    }
+  },
+  "model_full_B4": {
+    "bound": 4.0,
+    "S2": [
+      2.25,
+      1.05,
+      1.05,
+      0.49
+    ],
+    "P": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "Z": [
+      0.5624999903050307,
+      0.9375000040941888,
+      0.9375000013933754,
+      1.5625000287384443
+    ],
+    "Q": [
+      0.14062499757625768,
+      0.2343750010235472,
+      0.23437500034834385,
+      0.3906250071846111
+    ],
+    "Q_equiv_P": true,
+    "Z_sum_check": 1.0000000061327599,
+    "martingale": {
+      "E_Q_S1": 1.0000000031727758,
+      "S0": 1.0,
+      "martingale_t1": true,
+      "E_Q_S2_given_up": 1.4999999939242588,
+      "node_up": 1.5,
+      "martingale_t2_up": true,
+      "E_Q_S2_given_down": 0.6999999977810433,
+      "node_down": 0.7,
+      "martingale_t2_down": true
+    },
+    "na_direction": {
+      "buy_and_hold": {
+        "E_Q_gain": -2.959984077288702e-09,
+        "zero": true
+      },
+      "up_subtree": {
+        "E_Q_gain": -2.278402966293669e-09,
+        "zero": true
+      },
+      "down_subtree": {
+        "E_Q_gain": -1.3868479281642365e-09,
+        "zero": true
+      },
+      "mixed": {
+        "E_Q_gain": -3.4057615755367365e-09,
+        "zero": true
+      }
+    }
+  },
+  "local_martingale_conclusion": "S is a Q2-local martingale (in fact a Q2-true martingale) via the sequence sigma_1 (bound=2) and sigma_2=T (bound=4). Each stopped process S^{sigma_m} is a Q_m-martingale, confirming the FTAP for locally bounded processes."
+}

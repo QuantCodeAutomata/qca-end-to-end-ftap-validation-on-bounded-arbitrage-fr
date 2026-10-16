@@ -1,0 +1,93 @@
+{
+  "model_A_na": {
+    "na_holds": false,
+    "lp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "arb_h": 6.25,
+    "arb_gain": [
+      1.2499999999999998,
+      0.6250000000000006
+    ]
+  },
+  "model_A_sep_density": {
+    "status": "infeasible"
+  },
+  "model_A_emm": {
+    "status": "infeasible"
+  },
+  "model_A_analytic_q1": -1.0000000000000022,
+  "model_A_robustness": [
+    {
+      "h": 0.5,
+      "gain": [
+        0.09999999999999998,
+        0.050000000000000044
+      ],
+      "is_arb": true,
+      "min_gain": 0.050000000000000044,
+      "E_P_gain": 0.08
+    },
+    {
+      "h": 1.0,
+      "gain": [
+        0.19999999999999996,
+        0.10000000000000009
+      ],
+      "is_arb": true,
+      "min_gain": 0.10000000000000009,
+      "E_P_gain": 0.16
+    },
+    {
+      "h": 2.0,
+      "gain": [
+        0.3999999999999999,
+        0.20000000000000018
+      ],
+      "is_arb": true,
+      "min_gain": 0.20000000000000018,
+      "E_P_gain": 0.32
+    },
+    {
+      "h": 5.0,
+      "gain": [
+        0.9999999999999998,
+        0.5000000000000004
+      ],
+      "is_arb": true,
+      "min_gain": 0.5000000000000004,
+      "E_P_gain": 0.8
+    },
+    {
+      "h": 10.0,
+      "gain": [
+        1.9999999999999996,
+        1.0000000000000009
+      ],
+      "is_arb": true,
+      "min_gain": 1.0000000000000009,
+      "E_P_gain": 1.6
+    }
+  ],
+  "model_B_na": {
+    "na_holds": false,
+    "lp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "arb_h": [
+      4.0,
+      0.0
+    ],
+    "arb_gain": [
+      1.2000000000000002,
+      0.7999999999999998
+    ]
+  },
+  "model_B_emm": {
+    "status": "infeasible"
+  },
+  "summary": {
+    "model_A_na": false,
+    "model_A_sep_infeasible": true,
+    "model_A_emm_infeasible": true,
+    "model_B_na": false,
+    "model_B_emm_infeasible": true,
+    "FTAP_duality_confirmed": true
+  }
+}

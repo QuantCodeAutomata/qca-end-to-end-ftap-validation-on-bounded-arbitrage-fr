@@ -1,0 +1,72 @@
+{
+  "tree": {
+    "d": 1,
+    "T": 1,
+    "S0": 1.0,
+    "up": 1.2,
+    "down": 0.8,
+    "p_up": 0.6,
+    "p_down": 0.4,
+    "state_space_E": [
+      0.64,
+      0.8,
+      0.96,
+      1.0,
+      1.2,
+      1.44
+    ],
+    "bound_B": 1.44,
+    "path_probs": {
+      "uu": 0.36,
+      "ud": 0.24,
+      "du": 0.24,
+      "dd": 0.16
+    }
+  },
+  "na": {
+    "na_holds": true,
+    "lp_status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is At lower/fixed bound)"
+  },
+  "emm": {
+    "status": "optimal",
+    "Q": {
+      "uu": 0.24999999999999986,
+      "ud": 0.24999999999999978,
+      "du": 0.24999999999999983,
+      "dd": 0.24999999999999983
+    },
+    "Z": {
+      "uu": 0.6944444444444441,
+      "ud": 1.0416666666666659,
+      "du": 1.041666666666666,
+      "dd": 1.562499999999999
+    },
+    "E_P_Z": 0.9999999999999993,
+    "Q_equivalent_P": true
+  },
+  "martingale": {
+    "E_Q_ST_given_up": 1.2,
+    "S_mid_up": 1.2,
+    "martingale_up_ok": true,
+    "E_Q_ST_given_dn": 0.8,
+    "S_mid_dn": 0.8,
+    "martingale_dn_ok": true,
+    "E_Q_S_mid": 0.9999999999999992,
+    "S_root": 1.0,
+    "martingale_t0_ok": true
+  },
+  "gain_separation": {
+    "E_Q_gains": [
+      0.0,
+      2.2204460492503132e-17,
+      1.110223024625156e-18
+    ],
+    "all_zero": true
+  },
+  "summary": {
+    "NA": true,
+    "NFLVR": true,
+    "EMM_exists": true,
+    "S_is_Q_martingale": true
+  }
+}
